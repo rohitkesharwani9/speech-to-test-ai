@@ -25,7 +25,8 @@ function App() {
                 {/* <p className="text-center">Effortless Transcription and Translation for Any Audio File.</p> */}
                 <p className="text-center bg-red-100 rounded-lg">
                 <b>Note:</b> Please wait a few seconds for your audio file to upload. Once the upload is complete, the "Transcribe Audio" and settings buttons will appear.<br/><b>After the transcription process is complete, the download buttons appear at the bottom.</b>
-                </p><br/>
+                </p>
+                <p className="text-center max-w-[100%] rounded-lg">Please be patient when running this app for the first time, as it needs to download the AI LLM file (170MB). The download time may vary depending on your internet speed. Once completed, future transcriptions will be instant. You can also choose the LLM by clicking on the settings icon. Larger models provide better transcription quality.</p><br/>
                 <AudioManager transcriber={transcriber} />
                 <Transcript transcribedData={transcriber.output} />
                 Made with ❤️ in the USA<br/>

@@ -1,0 +1,130 @@
+{
+  "name": "Speech to Text AI",
+  "short_name": "Speech to Text AI",
+  "start_url": "https://speech.coderobo.org/",
+  "display": "standalone",
+  "background_color": "#edfffb",
+  "lang": "en",
+  "scope": "https://speech.coderobo.org/",
+  "id": "https://speech.coderobo.org/",
+  "description": "Speech to Text - An AI Audio Transcription & Translation Tool",
+  "screenshots": [
+    {
+      "src": "https://speech.coderobo.org/pwa-app/screenshots/desktop1.png",
+      "sizes": "1920x1080",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "https://speech.coderobo.org/pwa-app/screenshots/mobile1.png",
+      "sizes": "1080x1920",
+      "type": "image/jpg",
+      "form_factor": "narrow"
+    }
+  ],
+  "dir": "ltr",
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "orientation": "portrait",
+  "theme_color": "#05fcc5",
+  "user_preferences": {
+    "color_scheme": {
+      "dark": {
+        "theme_color": "#05fcc5",
+        "background_color": "#333333"
+      },
+      "light": {
+        "theme_color": "#05fcc5",
+        "background_color": "#FFFFFF"
+      }
+    }
+  },
+  "icons": [
+    {
+      "src": "https://speech.coderobo.org/pwa-app/512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://speech.coderobo.org/pwa-app/256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any"
+    },
+    {
+      "src": "https://speech.coderobo.org/pwa-app/192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "https://speech.coderobo.org/pwa-app/app-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "tools",
+    "utilities",
+    "productivity"
+  ],
+  "file_handlers": [
+    {
+      "action": "https://speech.coderobo.org/",
+      "accept": {
+        "image/*": [
+          ".jpg",
+          ".jpeg",
+          ".png",
+          ".webp"
+        ]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "https://speech.coderobo.org/share-target/",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "image",
+          "accept": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ]
+        }
+      ]
+    }
+  },
+  "iarc_rating_id": "39d78758-59f2-429e-92ab-ad11d61feafe",
+  "related_applications": [
+    {
+      "platform": "windows",
+      "url": "https://speech.coderobo.org/pwa-app/manifest.webmanifest",
+      "display_name": "Code Robo Apps"
+    }
+  ],
+  "prefer_related_applications": true,
+  "mswindows_store_tags": [
+    "Speech to Text",
+    "Ai Speech To Text",
+    "Free Speech To Text",
+    "Speech To Text Ai",
+    "Voice To Text",
+    "Speech To Text App",
+    "Speech To Text Free"
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Speech to Text Engine",
+      "url": "/",
+      "description": "Start Making Voice To Text"
+    }
+    
+  ]
+}

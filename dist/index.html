@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speech to Text - An AI Audio Transcription & Translation Tool</title>
+  <meta name="description" content="Speech to Text Converter." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Speech to Text - An AI Audio Transcription & Translation Tool" />
+  <meta property="og:description" content="Speech to Text Converter." />
+  <meta property="og:url" content="https://speech.coderobo.org" />
+  <meta property="og:site_name" content="Audio To Text And SRT Generator" />
+  <meta property="og:image" content="https://speech.coderobo.org/audio-to-subtile-generator.png" />
+  <meta property="og:image:secure_url" content="https://speech.coderobo.org/audio-to-subtile-generator.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Audio To Subtile Generator" />
+  <meta property="og:image:type" content="image/png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Speech to Text - An AI Audio Transcription & Translation Tool" />
+  <meta name="twitter:description" content="Speech to Text Converter." />
+  <meta name="twitter:image" content="https://speech.coderobo.org/audio-to-subtile-generator.png" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6S926GZYM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q6S926GZYM');
+  </script>
+
+
+  <!-- pwa app import start -->
+  <link rel="manifest" href="/pwa-app/manifest.webmanifest">
+  <script src="/pwa-app/install.js"></script>
+  <script src="/pwa-app/main.js"></script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('/pwa-app/sw.js')
+    }
+  </script>
+  <!-- pwa app import close -->
+
+
+
+
+  <!--check online and offline code start-->
+  <script>
+    // Function to show the offline alert
+    function showOfflineAlert() {
+      const alertBox = document.createElement("div");
+      alertBox.id = "offlineAlert";
+      alertBox.style.position = "fixed";
+      alertBox.style.top = "50%";
+      alertBox.style.left = "50%";
+      alertBox.style.transform = "translate(-50%, -50%)";
+      alertBox.style.backgroundColor = "#dbf8d7";
+      alertBox.style.color = "red";
+      alertBox.style.padding = "20px";
+      alertBox.style.border = "1px solid #dbf8d7";
+      alertBox.style.borderRadius = "8px";
+      alertBox.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+      alertBox.style.textAlign = "center";
+      alertBox.style.zIndex = "10000";
+      alertBox.innerHTML = `
+            <h2 style="margin: 0; font-size: 18px;">You are not connected to the internet</h2>
+            <p style="margin: 10px 0;">This app requires an active internet connection. Please connect to the internet.</p>
+            
+            
+        `;
+      document.body.appendChild(alertBox);
+    }
+
+    // Function to close the offline alert
+    function closeOfflineAlert() {
+      const alertBox = document.getElementById("offlineAlert");
+      if (alertBox) {
+        alertBox.remove();
+      }
+    }
+
+    // Detect offline and show alert
+    window.addEventListener("offline", showOfflineAlert);
+
+    // Detect online and remove alert if it's visible
+    window.addEventListener("online", closeOfflineAlert);
+
+    // Check connectivity on load
+    if (!navigator.onLine) {
+      showOfflineAlert();
+    }
+  </script>
+  <!--check online and offline code end-->
+
+
+
+
+  <script type="module" crossorigin src="/assets/index-dea6fe32.js"></script>
+  <link rel="stylesheet" href="/assets/index-6cda53fa.css">
+</head>
+
+<body>
+  <style>
+    /* Ensure body has the background color */
+    body {
+      background-color: #dff5ff;
+      margin: 0;
+      height: 100%;
+    }
+    /* Apply the same background to the #root element */
+    #root {
+      background-color: #dff5ff;
+      height: 100%;
+    }
+  </style>
+  <div id="root"></div>
+  
+  <div class="custom-title-bar">
+    <span class="app-title"><b>Speech to Text AI</b></span>
+  </div><br>
+  <style>
+    .custom-title-bar {
+      -webkit-app-region: drag;
+      /* Makes the area draggable */
+      background-color: #05fcc5;
+      /* Set the background color */
+      color: #333;
+      /* Text color */
+      height: 33px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      font-size: 14px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+              user-select: none;
+      position: fixed;
+      /* Sticks to the top at all times */
+      top: 0;
+      /* Ensures it stays at the top of the viewport */
+      left: 0;
+      /* Aligns to the left of the viewport */
+      width: 100%;
+      /* Spans the full width of the viewport */
+      z-index: 1000;
+      /* Ensures it stays above other elements */
+    }
+  </style>
+</body>
+
+</html>
